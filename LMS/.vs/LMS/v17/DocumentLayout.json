@@ -3,11 +3,15 @@
   "WorkspaceRootPath": "F:\\Github\\DBLab_Project\\LMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|F:\\Github\\DBLab_Project\\LMS\\lms\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -18,25 +22,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "User.cs",
-              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\User.cs",
-              "RelativeDocumentMoniker": "LMS\\User.cs",
-              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\User.cs",
-              "RelativeToolTip": "LMS\\User.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAwwC4AAAAOAAAA",
+              "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Student.cs",
+              "RelativeDocumentMoniker": "LMS\\Student.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Student.cs",
+              "RelativeToolTip": "LMS\\Student.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T11:33:20.404Z",
-              "IsPinned": true,
+              "WhenOpened": "2024-07-06T14:44:10.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "Professor.cs",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Professor.cs",
+              "RelativeDocumentMoniker": "LMS\\Professor.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Professor.cs",
+              "RelativeToolTip": "LMS\\Professor.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAACYAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-06T14:11:03.315Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DBHelper.cs",
               "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\DBHelper.cs",
               "RelativeDocumentMoniker": "LMS\\DBHelper.cs",
@@ -44,8 +60,7 @@
               "RelativeToolTip": "LMS\\DBHelper.cs",
               "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T11:30:41.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T11:30:41.638Z"
             }
           ]
         }

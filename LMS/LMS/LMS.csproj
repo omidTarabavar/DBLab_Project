@@ -44,7 +44,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DBHelper.cs" />
+    <Compile Include="Professor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student.cs" />
     <Compile Include="User.cs" />
   </ItemGroup>
   <ItemGroup>

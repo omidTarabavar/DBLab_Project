@@ -53,3 +53,11 @@ CREATE TABLE Exams(
 	PRIMARY KEY (eId, cId),
 	FOREIGN KEY (cId) REFERENCES Course(cId)
 );
+
+CREATE TABLE Registration_Request(
+	sId INT NOT NULL,
+	cId INT NOT NULL,
+	PRIMARY KEY (sId, cId),
+	FOREIGN KEY (sId) REFERENCES Student(sId),
+	FOREIGN KEY (cId) REFERENCES Course(cId)
+);
