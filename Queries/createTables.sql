@@ -1,19 +1,19 @@
 CREATE TABLE Professor (
     pId INT IDENTITY(1,1) PRIMARY KEY,
-    Email VARCHAR(255) NOT NULL,
-    Password VARCHAR(50) NOT NULL,
     Name VARCHAR(255) NOT NULL,
-    Phonenumber VARCHAR(20) NOT NULL,
-    Family VARCHAR(255) NOT NULL
+    Family VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL UNIQUE,
+    Password VARCHAR(50) NOT NULL,
+    Phonenumber VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE Student (
 	sId INT IDENTITY(1,1) PRIMARY KEY,
-    Email VARCHAR(255) NOT NULL,
-    Password VARCHAR(50) NOT NULL,
     Name VARCHAR(255) NOT NULL,
-    Phonenumber VARCHAR(20) NOT NULL,
-    Family VARCHAR(255) NOT NULL
+    Family VARCHAR(255) NOT NULL,
+    Email VARCHAR(255) NOT NULL UNIQUE,
+    Password VARCHAR(50) NOT NULL,
+    Phonenumber VARCHAR(20) NOT NULL
 );
 
 CREATE TABLE Course (
@@ -36,9 +36,9 @@ CREATE TABLE Registration(
 
 CREATE TABLE Files(
 	fId INT,
-	cId INT,
 	Title VARCHAR(255) NOT NULL,
 	Link VARCHAR(255) NOT NULL,
+	cId INT,
 	PRIMARY KEY (fId, cId),
 	FOREIGN KEY (cId) REFERENCES Course(cId)
 );

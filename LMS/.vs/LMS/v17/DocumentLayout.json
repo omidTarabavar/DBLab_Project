@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "F:\\Github\\DBLab_Project\\LMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E14979EA-FCC4-4238-BA8A-A94C5BCBD063}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E14979EA-FCC4-4238-BA8A-A94C5BCBD063}|LMS\\LMS.csproj|solutionrelative:lms\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E14979EA-FCC4-4238-BA8A-A94C5BCBD063}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E14979EA-FCC4-4238-BA8A-A94C5BCBD063}|LMS\\LMS.csproj|solutionrelative:lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,22 +28,23 @@
               "RelativeDocumentMoniker": "LMS\\User.cs",
               "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\User.cs",
               "RelativeToolTip": "LMS\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAwwC4AAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T06:29:51.706Z",
+              "WhenOpened": "2024-07-06T11:33:20.404Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Program.cs",
-              "RelativeDocumentMoniker": "LMS\\Program.cs",
-              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Program.cs",
-              "RelativeToolTip": "LMS\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "DBHelper.cs",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\DBHelper.cs",
+              "RelativeDocumentMoniker": "LMS\\DBHelper.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\DBHelper.cs",
+              "RelativeToolTip": "LMS\\DBHelper.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABsAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-04T15:34:31.64Z",
+              "WhenOpened": "2024-07-06T11:30:41.638Z",
               "EditorCaption": ""
             }
           ]
