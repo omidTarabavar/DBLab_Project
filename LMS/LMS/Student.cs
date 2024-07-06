@@ -20,5 +20,27 @@ namespace LMS
             else
                 return 1;
         }
+
+        public static DataTable ViewFiles(int cId)
+        {
+            string query;
+            SqlParameter[] sqlParameters;
+            query = "SELECT FROM Files WHERE cId = @cId;";
+            sqlParameters = new SqlParameter[] {
+                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId},
+            };
+            return DBHelper.ExecuteQuery(query, sqlParameters);
+        }
+
+        public static DataTable ViewExams(int cId)
+        {
+            string query;
+            SqlParameter[] sqlParameters;
+            query = "SELECT FROM Exams WHERE cId = @cId;";
+            sqlParameters = new SqlParameter[] {
+                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId},
+            };
+            return DBHelper.ExecuteQuery(query, sqlParameters);
+        }
     }
 }

@@ -11,9 +11,9 @@ namespace LMS
             SqlParameter[] sqlParameters;
             query = "INSERT INTO Course (Title, Semester, Department, pId) VALUES (@Title, @Semester, @Department, @pId);";
             sqlParameters = new SqlParameter[] {
-                    new SqlParameter("@Title", SqlDbType.NVarChar) {Value = title},
+                    new SqlParameter("@Title", SqlDbType.VarChar) {Value = title},
                     new SqlParameter("@Semester", SqlDbType.Int) {Value = semester},
-                    new SqlParameter("@Department", SqlDbType.NVarChar) {Value = department},
+                    new SqlParameter("@Department", SqlDbType.VarChar) {Value = department},
                     new SqlParameter("@pId", SqlDbType.Int) {Value = pId},
             };
             int res = DBHelper.ExecuteNonQuery(query, sqlParameters);
@@ -37,6 +37,75 @@ namespace LMS
             int res = DBHelper.ExecuteNonQuery(query, sqlParameters);
             if (res == 0) return -1;
             else return 1;
+        }
+
+        public static int Reject_Request(int sId, int cId)
+        {
+            string query;
+            SqlParameter[] sqlParameters;
+            sqlParameters = new SqlParameter[] {
+                    new SqlParameter("@sId", SqlDbType.Int) {Value = sId},
+                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId}
+            };
+            query = "DELETE FROM Registration_Request WHERE sId = @sId AND cId = @cId;";
+            int res = DBHelper.ExecuteNonQuery(query, sqlParameters);
+            if (res == 0) return -1;
+            else return 1;
+        }
+
+        public static int Upload_File(string title, string link, int cId)
+        {
+            string query;
+            SqlParameter[] sqlParameters;
+            query = "INSERT INTO Files (Title, Link, cId) VALUES (@Title, @Link, @cId);";
+            sqlParameters = new SqlParameter[] {
+                    new SqlParameter("@Title", SqlDbType.VarChar) {Value = title},
+                    new SqlParameter("@Link", SqlDbType.VarChar) {Value = link},
+                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId},
+            };
+            int res = DBHelper.ExecuteNonQuery(query, sqlParameters);
+            if (res == 0)
+                return -1;
+            else
+                return 1;
+        }
+
+        public static int Create_Exam(string title, string due, string questions, string answers, int cId)
+        {
+            string query;
+            SqlParameter[] sqlParameters;
+            query = "INSERT INTO Exams (Title, Due, Questions, Answers, cId) VALUES (@Title, @Due, @Questions, @Answers, @cId);";
+            sqlParameters = new SqlParameter[] {
+                    new SqlParameter("@Title", SqlDbType.VarChar) {Value = title},
+                    new SqlParameter("@Due", SqlDbType.DateTime) {Value = due},
+                    new SqlParameter("@Questions", SqlDbType.VarChar) {Value = questions},
+                    new SqlParameter("@Answers", SqlDbType.VarChar) {Value = answers},
+                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId},
+            };
+            int res = DBHelper.ExecuteNonQuery(query, sqlParameters);
+            if (res == 0)
+                return -1;
+            else
+                return 1;
+        }
+
+        public static int ChangeCourseInfo(string title, string semester, string department, int pId, int cId)
+        {
+            string query;
+            SqlParameter[] sqlParameters;
+            query = "UPDATE Course SET Title = @Title, Semester = @Semester, Department = @Department, pId = @pId WHERE cId = @cId;";
+            sqlParameters = new SqlParameter[] {
+                    new SqlParameter("@Title", SqlDbType.VarChar) {Value = title},
+                    new SqlParameter("@Semester", SqlDbType.Int) {Value = semester},
+                    new SqlParameter("@Department", SqlDbType.VarChar) {Value = department},
+                    new SqlParameter("@pId", SqlDbType.Int) {Value = pId},
+                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId}
+            };
+            int res = DBHelper.ExecuteNonQuery(query, sqlParameters);
+            if (res == 0)
+                return -1;
+            else
+                return 1;
         }
     }
 }
