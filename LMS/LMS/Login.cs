@@ -17,7 +17,23 @@ namespace LMS
             int res = User.Login(email, password);
             if (res == 0)
             {
-                Professor
+                Professor professor = Professor.GetProf(email, password);
+                ProfessorMenu professorMenu = new ProfessorMenu(professor);
+                this.Hide();
+                professorMenu.ShowDialog();
+                this.Dispose();
+            }
+            else if (res == 1)
+            {
+                Student student = Student.GetStd(email, password);
+                StudentMenu studentMenu = new StudentMenu(student);
+                this.Hide();
+                studentMenu.ShowDialog();
+                this.Dispose();
+            }
+            else
+            {
+
             }
 
         }

@@ -9,6 +9,17 @@ namespace LMS
         {
 
         }
+        public static Student GetStd(string email, string password)
+        {
+            SqlParameter[] sqlParameters = {
+                new SqlParameter("@Email", SqlDbType.VarChar) { Value = email },
+                new SqlParameter("@Password", SqlDbType.VarChar) { Value = password }
+            };
+
+            string query = "SELECT Name, Family, Email, Password, Phonenumber FROM Student WHERE Email = @Email AND Password = @Password";
+            DataRow res = DBHelper.ExecuteQuery(query, sqlParameters).Rows[0];
+            return new Student(res["Name"].ToString(), res["Family"].ToString(), res["Email"].ToString(), res["Password"].ToString(), res["Phonenumber"].ToString());
+        }
         public static int RegisterInCourse(int cId, int sId)
         {
             string query;

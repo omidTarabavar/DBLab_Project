@@ -5,7 +5,7 @@ namespace LMS
 {
     internal class DBHelper
     {
-        static string cs = "Data Source=HOPE1300;Initial Catalog=LMS;Integrated Security=True;Encrypt=False;Trust Server Certificate=True";
+        static string cs = "Data Source=HOPE1300;Initial Catalog=LMS;Integrated Security=True;Encrypt=False;TrustServerCertificate=True";
 
         public static int ExecuteNonQuery(string query, SqlParameter[] parameters)
         {
@@ -19,7 +19,6 @@ namespace LMS
                     {
                         command.Parameters.AddRange(parameters);
                     }
-
                     return command.ExecuteNonQuery();
                 }
             }
@@ -30,7 +29,6 @@ namespace LMS
             using (SqlConnection connection = new SqlConnection(cs))
             {
                 connection.Open();
-
                 using (SqlCommand command = new SqlCommand(query, connection))
                 {
                     if (parameters != null)
@@ -42,6 +40,7 @@ namespace LMS
                     {
                         DataTable dataTable = new DataTable();
                         adapter.Fill(dataTable);
+                        command.Parameters.Clear();
                         return dataTable;
                     }
                 }

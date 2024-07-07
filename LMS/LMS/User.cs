@@ -14,7 +14,7 @@ namespace LMS
             this.password = password;
             this.phoneNumber = phoneNumber;
         }
-        public static int SignUp(string name, string family, string password, string email, string phoneNumber, int type)
+        public static int SignUp(string name, string family, string email, string password, string phoneNumber, int type)
         {
             string query;
             SqlParameter[] sqlParameters;
@@ -59,7 +59,10 @@ namespace LMS
             DataTable res = DBHelper.ExecuteQuery(query, sqlParameters);
             if (res.Rows.Count > 0)
                 return 0;
-
+            sqlParameters = new SqlParameter[] {
+                new SqlParameter("@Email", SqlDbType.VarChar) { Value = email },
+                new SqlParameter("@Password", SqlDbType.VarChar) { Value = password }
+            };
             query = "SELECT sId FROM Student WHERE Email = @Email AND Password = @Password";
             res = DBHelper.ExecuteQuery(query, sqlParameters);
             if (res.Rows.Count > 0)

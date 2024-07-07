@@ -9,6 +9,17 @@ namespace LMS
         {
 
         }
+        public static Professor GetProf(string email, string password)
+        {
+            SqlParameter[] sqlParameters = {
+                new SqlParameter("@Email", SqlDbType.VarChar) { Value = email },
+                new SqlParameter("@Password", SqlDbType.VarChar) { Value = password }
+            };
+
+            string query = "SELECT Name, Family, Email, Password, Phonenumber FROM Professor WHERE Email = @Email AND Password = @Password";
+            DataRow res = DBHelper.ExecuteQuery(query, sqlParameters).Rows[0];
+            return new Professor(res["Name"].ToString(), res["Family"].ToString(), res["Email"].ToString(), res["Password"].ToString(), res["Phonenumber"].ToString());
+        }
         public static int CreateClass(string title, int semester, string department, int pId)
         {
             string query;
