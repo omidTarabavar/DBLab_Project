@@ -22,7 +22,7 @@ namespace LMS
                 int res = User.SignUp(name, family, email, password, phoneNumber, 0);
                 if (res == 1)
                 {
-                    Professor professor = new Professor(name, family, email, password, phoneNumber);
+                    Professor professor = Professor.GetProf(email, password);
                     ProfessorMenu professorMenu = new ProfessorMenu(professor);
                     this.Hide();
                     professorMenu.ShowDialog();
@@ -34,7 +34,7 @@ namespace LMS
                 int res = User.SignUp(name, family, email, password, phoneNumber, 1);
                 if (res == 1)
                 {
-                    Student student = new Student(name, family, email, password, phoneNumber);
+                    Student student = Student.GetStd(email, password);
                     StudentMenu studentMenu = new StudentMenu(student);
                     this.Hide();
                     studentMenu.ShowDialog();

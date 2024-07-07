@@ -5,9 +5,11 @@ namespace LMS
 {
     public class User
     {
-        string name, family, password, email, phoneNumber;
-        public User(string name, string family, string email, string password, string phoneNumber)
+        public int id;
+        public string name, family, password, email, phoneNumber;
+        public User(int id, string name, string family, string email, string password, string phoneNumber)
         {
+            this.id = id;
             this.name = name;
             this.family = family;
             this.email = email;
@@ -70,7 +72,7 @@ namespace LMS
             return -1;
         }
 
-        public static int ChangeProfile(string name, string family, string password, string email, string phoneNumber, int type, int id)
+        public static int ChangeProfile(int id, string name, string family, string email, string password, string phoneNumber, int type)
         {
             string query;
             SqlParameter[] sqlParameters = {

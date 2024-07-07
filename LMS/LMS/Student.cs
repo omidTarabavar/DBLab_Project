@@ -5,7 +5,7 @@ namespace LMS
 {
     public class Student : User
     {
-        public Student(string name, string family, string email, string pass, string pn) : base(name, family, email, pass, pn)
+        public Student(int id, string name, string family, string email, string pass, string pn) : base(id, name, family, email, pass, pn)
         {
 
         }
@@ -15,10 +15,9 @@ namespace LMS
                 new SqlParameter("@Email", SqlDbType.VarChar) { Value = email },
                 new SqlParameter("@Password", SqlDbType.VarChar) { Value = password }
             };
-
-            string query = "SELECT Name, Family, Email, Password, Phonenumber FROM Student WHERE Email = @Email AND Password = @Password";
+            string query = "SELECT sId, Name, Family, Email, Password, Phonenumber FROM Student WHERE Email = @Email AND Password = @Password";
             DataRow res = DBHelper.ExecuteQuery(query, sqlParameters).Rows[0];
-            return new Student(res["Name"].ToString(), res["Family"].ToString(), res["Email"].ToString(), res["Password"].ToString(), res["Phonenumber"].ToString());
+            return new Student(int.Parse(res["sId"].ToString()), res["Name"].ToString(), res["Family"].ToString(), res["Email"].ToString(), res["Password"].ToString(), res["Phonenumber"].ToString());
         }
         public static int RegisterInCourse(int cId, int sId)
         {

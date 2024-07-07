@@ -14,7 +14,44 @@ namespace LMS
 
         private void ProfessorMenu_Load(object sender, EventArgs e)
         {
+            saveBT.Visible = false;
+            chngProf.Visible = true;
+            nameTB.ReadOnly = true;
+            familyTB.ReadOnly = true;
+            emailTB.ReadOnly = true;
+            pwTB.ReadOnly = true;
+            pnTB.ReadOnly = true;
+            nameTB.Text = professor.name;
+            familyTB.Text = professor.family;
+            emailTB.Text = professor.email;
+            pwTB.Text = "********";
+            pnTB.Text = professor.phoneNumber;
+        }
 
+        private void chngProf_Click(object sender, EventArgs e)
+        {
+            nameTB.ReadOnly = false;
+            familyTB.ReadOnly = false;
+            emailTB.ReadOnly = false;
+            pwTB.ReadOnly = false;
+            pwTB.Text = professor.password;
+            pnTB.ReadOnly = false;
+            saveBT.Visible = true;
+            chngProf.Visible = false;
+        }
+
+        private void saveBT_Click(object sender, EventArgs e)
+        {
+            int res = User.ChangeProfile(professor.id, nameTB.Text, familyTB.Text, emailTB.Text, pwTB.Text, pnTB.Text, 0);
+            if (res == 1)
+            {
+                professor.name = nameTB.Text;
+                professor.family = familyTB.Text;
+                professor.email = emailTB.Text;
+                professor.password = pwTB.Text;
+                professor.phoneNumber = pnTB.Text;
+                ProfessorMenu_Load(sender, EventArgs.Empty);
+            }
         }
     }
 }
