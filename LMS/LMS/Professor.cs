@@ -20,7 +20,16 @@ namespace LMS
             return new Professor(int.Parse(res["pId"].ToString()), res["Name"].ToString(), res["Family"].ToString(), res["Email"].ToString(), res["Password"].ToString(), res["Phonenumber"].ToString());
         }
 
-        public static int CreateClass(string title, int semester, string department, int pId)
+        public static DataTable getCoursesForProf(int pId)
+        {
+            string query = "SELECT * FROM Course WHERE pId = @pId";
+            SqlParameter[] sqlParameters = {
+                new SqlParameter("@pId", SqlDbType.Int) { Value = pId }
+            };
+            return DBHelper.ExecuteQuery(query, sqlParameters);
+        }
+
+        public static int AddCourse(string title, int semester, string department, int pId)
         {
             string query;
             SqlParameter[] sqlParameters;

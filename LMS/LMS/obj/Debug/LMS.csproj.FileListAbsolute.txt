@@ -12,3 +12,4 @@ F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.exe
 F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.pdb
 F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.ProfessorMenu.resources
 F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.StudentMenu.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.AddCourse.resources

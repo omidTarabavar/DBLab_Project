@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
 
 namespace LMS
@@ -26,6 +27,17 @@ namespace LMS
             emailTB.Text = professor.email;
             pwTB.Text = "********";
             pnTB.Text = professor.phoneNumber;
+            loadCourses();
+        }
+
+        private void loadCourses()
+        {
+            courseBox.Items.Clear();
+            DataTable dt = Professor.getCoursesForProf(professor.id);
+            foreach (DataRow dr in dt.Rows)
+            {
+                courseBox.Items.Add(dr["Title"]);
+            }
         }
 
         private void chngProf_Click(object sender, EventArgs e)
@@ -52,6 +64,19 @@ namespace LMS
                 professor.phoneNumber = pnTB.Text;
                 ProfessorMenu_Load(sender, EventArgs.Empty);
             }
+            else
+            {
+
+            }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AddCourse addCourse = new AddCourse(professor.id);
+            addCourse.ShowDialog();
+            ProfessorMenu_Load(sender, e);
+            this.Show();
         }
     }
 }

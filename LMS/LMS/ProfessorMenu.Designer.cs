@@ -40,7 +40,7 @@
             this.pwTB = new System.Windows.Forms.TextBox();
             this.pnTB = new System.Windows.Forms.TextBox();
             this.chngProf = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.addCrsBT = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.saveBT = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -149,14 +149,15 @@
             this.chngProf.UseVisualStyleBackColor = true;
             this.chngProf.Click += new System.EventHandler(this.chngProf_Click);
             // 
-            // button1
+            // addCrsBT
             // 
-            this.button1.Location = new System.Drawing.Point(404, 372);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 38);
-            this.button1.TabIndex = 12;
-            this.button1.Text = "Add Course";
-            this.button1.UseVisualStyleBackColor = true;
+            this.addCrsBT.Location = new System.Drawing.Point(404, 372);
+            this.addCrsBT.Name = "addCrsBT";
+            this.addCrsBT.Size = new System.Drawing.Size(116, 38);
+            this.addCrsBT.TabIndex = 12;
+            this.addCrsBT.Text = "Add Course";
+            this.addCrsBT.UseVisualStyleBackColor = true;
+            this.addCrsBT.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -185,7 +186,7 @@
             this.ClientSize = new System.Drawing.Size(812, 450);
             this.Controls.Add(this.saveBT);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.addCrsBT);
             this.Controls.Add(this.chngProf);
             this.Controls.Add(this.pnTB);
             this.Controls.Add(this.pwTB);
@@ -220,7 +221,7 @@
         private System.Windows.Forms.TextBox pwTB;
         private System.Windows.Forms.TextBox pnTB;
         private System.Windows.Forms.Button chngProf;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button addCrsBT;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button saveBT;
     }
