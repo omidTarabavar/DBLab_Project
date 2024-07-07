@@ -3,8 +3,12 @@ using System.Data.SqlClient;
 
 namespace LMS
 {
-    internal class Student : User
+    public class Student : User
     {
+        public Student(string name, string family, string email, string pass, string pn) : base(name, family, email, pass, pn)
+        {
+
+        }
         public static int RegisterInCourse(int cId, int sId)
         {
             string query;

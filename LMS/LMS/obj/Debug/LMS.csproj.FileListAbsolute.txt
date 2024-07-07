@@ -1,0 +1,12 @@
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.csproj.AssemblyReference.cache
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.Login.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.MainMenu.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.Properties.Resources.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.SignUp.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.csproj.GenerateResource.cache
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.csproj.CoreCompileInputs.cache
+F:\Github\DBLab_Project\LMS\LMS\bin\Debug\LMS.exe.config
+F:\Github\DBLab_Project\LMS\LMS\bin\Debug\LMS.exe
+F:\Github\DBLab_Project\LMS\LMS\bin\Debug\LMS.pdb
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.exe
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.pdb

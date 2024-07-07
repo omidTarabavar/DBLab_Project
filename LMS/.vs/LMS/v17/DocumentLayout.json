@@ -3,16 +3,60 @@
   "WorkspaceRootPath": "F:\\Github\\DBLab_Project\\LMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|F:\\Github\\DBLab_Project\\LMS\\lms\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|F:\\Github\\DBLab_Project\\LMS\\lms\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\signup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\professormenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\professormenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\studentmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\studentmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\studentmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\studentmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\professormenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\professormenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\professor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|f:\\github\\dblab_project\\lms\\lms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|solutionrelative:lms\\mainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D382B93C-8714-4841-92FD-76201CA95D2F}|LMS\\LMS.csproj|F:\\Github\\DBLab_Project\\LMS\\lms\\dbhelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,8 +70,146 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 9,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cs",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Login.cs",
+              "RelativeDocumentMoniker": "LMS\\Login.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Login.cs",
+              "RelativeToolTip": "LMS\\Login.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAlwBMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T14:00:27.252Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "StudentMenu.cs",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\StudentMenu.cs",
+              "RelativeDocumentMoniker": "LMS\\StudentMenu.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\StudentMenu.cs",
+              "RelativeToolTip": "LMS\\StudentMenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:51:03.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProfessorMenu.cs",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\ProfessorMenu.cs",
+              "RelativeDocumentMoniker": "LMS\\ProfessorMenu.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\ProfessorMenu.cs",
+              "RelativeToolTip": "LMS\\ProfessorMenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:48:57.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "StudentMenu.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\StudentMenu.cs",
+              "RelativeDocumentMoniker": "LMS\\StudentMenu.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\StudentMenu.cs [Design]",
+              "RelativeToolTip": "LMS\\StudentMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:48:28.814Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProfessorMenu.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\ProfessorMenu.cs",
+              "RelativeDocumentMoniker": "LMS\\ProfessorMenu.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\ProfessorMenu.cs [Design]",
+              "RelativeToolTip": "LMS\\ProfessorMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:46:50.833Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SignUp.cs",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\SignUp.cs",
+              "RelativeDocumentMoniker": "LMS\\SignUp.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\SignUp.cs",
+              "RelativeToolTip": "LMS\\SignUp.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAB0AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:29:32.724Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Program.cs",
+              "RelativeDocumentMoniker": "LMS\\Program.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Program.cs",
+              "RelativeToolTip": "LMS\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:26:51.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainMenu.cs",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\MainMenu.cs",
+              "RelativeDocumentMoniker": "LMS\\MainMenu.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\MainMenu.cs",
+              "RelativeToolTip": "LMS\\MainMenu.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:12:14.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SignUp.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\SignUp.cs",
+              "RelativeDocumentMoniker": "LMS\\SignUp.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\SignUp.cs [Design]",
+              "RelativeToolTip": "LMS\\SignUp.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:08:22.536Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Login.cs",
+              "RelativeDocumentMoniker": "LMS\\Login.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Login.cs [Design]",
+              "RelativeToolTip": "LMS\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:04:53.584Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainMenu.cs [Design]",
+              "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\MainMenu.cs",
+              "RelativeDocumentMoniker": "LMS\\MainMenu.cs",
+              "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\MainMenu.cs [Design]",
+              "RelativeToolTip": "LMS\\MainMenu.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-07T13:01:12.028Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -36,40 +218,40 @@
               "RelativeDocumentMoniker": "LMS\\User.cs",
               "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\User.cs",
               "RelativeToolTip": "LMS\\User.cs",
-              "ViewState": "AQIAADsAAAAAAAAAAAAwwDwAAAAbAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAUAAAAKAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-06T18:14:52.788Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Student.cs",
               "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Student.cs",
               "RelativeDocumentMoniker": "LMS\\Student.cs",
               "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Student.cs",
               "RelativeToolTip": "LMS\\Student.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAwwCYAAAAmAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-06T14:44:10.781Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 12,
               "Title": "Professor.cs",
               "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Professor.cs",
               "RelativeDocumentMoniker": "LMS\\Professor.cs",
               "ToolTip": "F:\\Github\\DBLab_Project\\LMS\\LMS\\Professor.cs",
               "RelativeToolTip": "LMS\\Professor.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAGUAAAAoAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-06T14:11:03.315Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 14,
               "Title": "DBHelper.cs",
               "DocumentMoniker": "F:\\Github\\DBLab_Project\\LMS\\LMS\\DBHelper.cs",
               "RelativeDocumentMoniker": "LMS\\DBHelper.cs",
@@ -77,8 +259,7 @@
               "RelativeToolTip": "LMS\\DBHelper.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAACsAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-06T11:30:41.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-07-06T11:30:41.638Z"
             }
           ]
         }

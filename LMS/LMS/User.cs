@@ -3,8 +3,17 @@ using System.Data.SqlClient;
 
 namespace LMS
 {
-    internal class User
+    public class User
     {
+        string name, family, password, email, phoneNumber;
+        public User(string name, string family, string email, string password, string phoneNumber)
+        {
+            this.name = name;
+            this.family = family;
+            this.email = email;
+            this.password = password;
+            this.phoneNumber = phoneNumber;
+        }
         public static int SignUp(string name, string family, string password, string email, string phoneNumber, int type)
         {
             string query;
