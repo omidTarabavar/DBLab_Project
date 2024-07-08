@@ -51,6 +51,19 @@
     <Compile Include="AddCourse.Designer.cs">
       <DependentUpon>AddCourse.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddCourseStd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddCourseStd.Designer.cs">
+      <DependentUpon>AddCourseStd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Course.cs" />
+    <Compile Include="CourseMenuProf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseMenuProf.Designer.cs">
+      <DependentUpon>CourseMenuProf.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBHelper.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -99,6 +112,12 @@
   <ItemGroup>
     <EmbeddedResource Include="AddCourse.resx">
       <DependentUpon>AddCourse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddCourseStd.resx">
+      <DependentUpon>AddCourseStd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseMenuProf.resx">
+      <DependentUpon>CourseMenuProf.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

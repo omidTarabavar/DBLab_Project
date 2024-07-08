@@ -113,23 +113,6 @@ namespace LMS
                 return 1;
         }
 
-        public static int ChangeCourseInfo(string title, string semester, string department, int pId, int cId)
-        {
-            string query;
-            SqlParameter[] sqlParameters;
-            query = "UPDATE Course SET Title = @Title, Semester = @Semester, Department = @Department, pId = @pId WHERE cId = @cId;";
-            sqlParameters = new SqlParameter[] {
-                    new SqlParameter("@Title", SqlDbType.VarChar) {Value = title},
-                    new SqlParameter("@Semester", SqlDbType.Int) {Value = semester},
-                    new SqlParameter("@Department", SqlDbType.VarChar) {Value = department},
-                    new SqlParameter("@pId", SqlDbType.Int) {Value = pId},
-                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId}
-            };
-            int res = DBHelper.ExecuteNonQuery(query, sqlParameters);
-            if (res == 0)
-                return -1;
-            else
-                return 1;
-        }
+
     }
 }
