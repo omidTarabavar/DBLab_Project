@@ -87,24 +87,31 @@ namespace LMS
             }
             else
             {
-
+                MessageBox.Show("Couldn't save this new information!");
             }
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            ListViewItem slcItem = crsLVStd.SelectedItems[0];
-            int cid = int.Parse(slcItem.SubItems[0].Text);
-            string title = slcItem.SubItems[1].Text;
-            int sem = int.Parse(slcItem.SubItems[2].Text);
-            string dep = slcItem.SubItems[3].Text;
-            int pid = int.Parse(slcItem.SubItems[4].Text);
-            Course slcCrs = new Course(cid, title, sem, dep, pid);
-            CourseMenuStd courseMenuStd = new CourseMenuStd(slcCrs);
-            this.Hide();
-            courseMenuStd.ShowDialog();
-            StudentMenu_Load(sender, e);
-            this.Show();
+            if (crsLVStd.SelectedItems.Count > 0)
+            {
+                ListViewItem slcItem = crsLVStd.SelectedItems[0];
+                int cid = int.Parse(slcItem.SubItems[0].Text);
+                string title = slcItem.SubItems[1].Text;
+                int sem = int.Parse(slcItem.SubItems[2].Text);
+                string dep = slcItem.SubItems[3].Text;
+                int pid = int.Parse(slcItem.SubItems[4].Text);
+                Course slcCrs = new Course(cid, title, sem, dep, pid);
+                CourseMenuStd courseMenuStd = new CourseMenuStd(slcCrs);
+                this.Hide();
+                courseMenuStd.ShowDialog();
+                StudentMenu_Load(sender, e);
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please Select an item!");
+            }
         }
     }
 }

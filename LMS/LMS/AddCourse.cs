@@ -16,7 +16,7 @@ namespace LMS
         {
             if (titleTB.Text.Equals("") || semTB.Text.Equals("") || depTB.Text.Equals("") || pidTB.Text.Equals(""))
             {
-
+                MessageBox.Show("Please Complete the form!");
             }
 
             else

@@ -45,32 +45,46 @@ namespace LMS
 
         private void accBT_Click(object sender, EventArgs e)
         {
-            ListViewItem slcItem = reqLV.SelectedItems[0];
-            int sId = int.Parse(slcItem.SubItems[0].Text);
-            SqlParameter[] sqlParameters = {
+            if (reqLV.SelectedItems.Count > 0)
+            {
+                ListViewItem slcItem = reqLV.SelectedItems[0];
+                int sId = int.Parse(slcItem.SubItems[0].Text);
+                SqlParameter[] sqlParameters = {
                 new SqlParameter("@sId", SqlDbType.Int) {Value = sId},
-            };
-            string query = "DELETE FROM Registration_Request WHERE sId = @sId";
-            DBHelper.ExecuteNonQuery(query, sqlParameters);
-            sqlParameters = new SqlParameter[] {
+                };
+                string query = "DELETE FROM Registration_Request WHERE sId = @sId";
+                DBHelper.ExecuteNonQuery(query, sqlParameters);
+                sqlParameters = new SqlParameter[] {
                 new SqlParameter("@sId", SqlDbType.Int) {Value = sId},
                 new SqlParameter("@cId", SqlDbType.Int) {Value = cid}
-            };
-            query = "INSERT INTO Registration (sId, cId) VALUES (@sId, @cId)";
-            DBHelper.ExecuteNonQuery(query, sqlParameters);
-            RequestMenu_Load(sender, e);
+                };
+                query = "INSERT INTO Registration (sId, cId) VALUES (@sId, @cId)";
+                DBHelper.ExecuteNonQuery(query, sqlParameters);
+                RequestMenu_Load(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Please select a request!");
+            }
         }
 
         private void rejBT_Click(object sender, EventArgs e)
         {
-            ListViewItem slcItem = reqLV.SelectedItems[0];
-            int sId = int.Parse(slcItem.SubItems[0].Text);
-            SqlParameter[] sqlParameters = {
+            if (reqLV.SelectedItems.Count > 0)
+            {
+                ListViewItem slcItem = reqLV.SelectedItems[0];
+                int sId = int.Parse(slcItem.SubItems[0].Text);
+                SqlParameter[] sqlParameters = {
                 new SqlParameter("@sId", SqlDbType.Int) {Value = sId},
-            };
-            string query = "DELETE FROM Registration_Request WHERE sId = @sId";
-            DBHelper.ExecuteNonQuery(query, sqlParameters);
-            RequestMenu_Load(sender, e);
+                };
+                string query = "DELETE FROM Registration_Request WHERE sId = @sId";
+                DBHelper.ExecuteNonQuery(query, sqlParameters);
+                RequestMenu_Load(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Please select a request!");
+            }
         }
     }
 }

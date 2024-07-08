@@ -37,7 +37,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.fileLV = new System.Windows.Forms.ListView();
-            this.examBT = new System.Windows.Forms.Button();
             this.viewFileBT = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -114,15 +113,6 @@
             this.fileLV.TabIndex = 21;
             this.fileLV.UseCompatibleStateImageBehavior = false;
             // 
-            // examBT
-            // 
-            this.examBT.Location = new System.Drawing.Point(38, 350);
-            this.examBT.Name = "examBT";
-            this.examBT.Size = new System.Drawing.Size(134, 47);
-            this.examBT.TabIndex = 23;
-            this.examBT.Text = "View Exams";
-            this.examBT.UseVisualStyleBackColor = true;
-            // 
             // viewFileBT
             // 
             this.viewFileBT.Location = new System.Drawing.Point(612, 361);
@@ -138,7 +128,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.examBT);
             this.Controls.Add(this.viewFileBT);
             this.Controls.Add(this.fileLV);
             this.Controls.Add(this.pidTB);
@@ -168,7 +157,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListView fileLV;
-        private System.Windows.Forms.Button examBT;
         private System.Windows.Forms.Button viewFileBT;
     }
 }

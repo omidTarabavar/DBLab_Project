@@ -45,17 +45,24 @@ namespace LMS
 
         private void viewFileBT_Click(object sender, EventArgs e)
         {
-            ListViewItem slcItem = fileLV.SelectedItems[0];
-            int fid = int.Parse(slcItem.SubItems[0].Text);
-            string title = slcItem.SubItems[1].Text;
-            string link = slcItem.SubItems[2].Text;
-            int cid = course.id;
-            File slcFile = new File(fid, title, link, cid);
-            FileMenuStd fileMenuStd = new FileMenuStd(slcFile);
-            this.Hide();
-            fileMenuStd.ShowDialog();
-            CourseMenuStd_Load(sender, e);
-            this.Show();
+            if (fileLV.SelectedItems.Count > 0)
+            {
+                ListViewItem slcItem = fileLV.SelectedItems[0];
+                int fid = int.Parse(slcItem.SubItems[0].Text);
+                string title = slcItem.SubItems[1].Text;
+                string link = slcItem.SubItems[2].Text;
+                int cid = course.id;
+                File slcFile = new File(fid, title, link, cid);
+                FileMenuStd fileMenuStd = new FileMenuStd(slcFile);
+                this.Hide();
+                fileMenuStd.ShowDialog();
+                CourseMenuStd_Load(sender, e);
+                this.Show();
+            }
+            else
+            {
+                MessageBox.Show("Please select an item!");
+            }
         }
     }
 }

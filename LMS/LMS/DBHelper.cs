@@ -1,4 +1,5 @@
-﻿using System.Data;
+﻿using System;
+using System.Data;
 using System.Data.SqlClient;
 
 namespace LMS
@@ -19,7 +20,14 @@ namespace LMS
                     {
                         command.Parameters.AddRange(parameters);
                     }
-                    return command.ExecuteNonQuery();
+                    try
+                    {
+                        return command.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        return 0;
+                    }
                 }
             }
         }

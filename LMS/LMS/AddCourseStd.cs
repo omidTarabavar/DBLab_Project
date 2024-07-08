@@ -21,20 +21,25 @@ namespace LMS
 
         private void button1_Click(object sender, EventArgs e)
         {
-            int cId = int.Parse(textBox1.Text);
-            string query = "INSERT INTO Registration_Request (sId, cId) VALUES (@sId, @cId);";
-            SqlParameter[] sqlParameters = {
-                new SqlParameter("@sId", SqlDbType.VarChar) {Value = student.id},
-                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId}
-            };
-            int res = DBHelper.ExecuteNonQuery(query, sqlParameters);
-            if (res > 0)
-            {
-                this.Dispose();
-            }
+            if (textBox1.Text.Equals(""))
+                MessageBox.Show("Please enter course id!");
             else
             {
-
+                int cId = int.Parse(textBox1.Text);
+                string query = "INSERT INTO Registration_Request (sId, cId) VALUES (@sId, @cId);";
+                SqlParameter[] sqlParameters = {
+                new SqlParameter("@sId", SqlDbType.VarChar) {Value = student.id},
+                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId}
+                };
+                int res = DBHelper.ExecuteNonQuery(query, sqlParameters);
+                if (res > 0)
+                {
+                    this.Dispose();
+                }
+                else
+                {
+                    MessageBox.Show("Can't send request. Maybe you already did!");
+                }
             }
         }
     }

@@ -44,14 +44,21 @@ namespace LMS
 
         private void removeFileBT_Click(object sender, EventArgs e)
         {
-            ListViewItem slcItem = fileListLV.SelectedItems[0];
-            int fId = int.Parse(slcItem.SubItems[0].Text);
-            SqlParameter[] sqlParameters = {
+            if (fileListLV.SelectedItems.Count > 0)
+            {
+                ListViewItem slcItem = fileListLV.SelectedItems[0];
+                int fId = int.Parse(slcItem.SubItems[0].Text);
+                SqlParameter[] sqlParameters = {
                 new SqlParameter("@fId", SqlDbType.Int) {Value = fId},
-            };
-            string query = "DELETE FROM Files WHERE fId = @fId";
-            DBHelper.ExecuteNonQuery(query, sqlParameters);
-            FileListMenu_Load(sender, e);
+                };
+                string query = "DELETE FROM Files WHERE fId = @fId";
+                DBHelper.ExecuteNonQuery(query, sqlParameters);
+                FileListMenu_Load(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Please select an item!");
+            }
         }
     }
 }

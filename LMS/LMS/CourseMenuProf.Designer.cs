@@ -31,7 +31,6 @@
             this.reqBT = new System.Windows.Forms.Button();
             this.rmvStdBT = new System.Windows.Forms.Button();
             this.fileBT = new System.Windows.Forms.Button();
-            this.examBT = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -67,22 +66,13 @@
             // 
             // fileBT
             // 
-            this.fileBT.Location = new System.Drawing.Point(175, 362);
+            this.fileBT.Location = new System.Drawing.Point(35, 362);
             this.fileBT.Name = "fileBT";
             this.fileBT.Size = new System.Drawing.Size(134, 47);
             this.fileBT.TabIndex = 3;
             this.fileBT.Text = "View Files";
             this.fileBT.UseVisualStyleBackColor = true;
             this.fileBT.Click += new System.EventHandler(this.fileBT_Click);
-            // 
-            // examBT
-            // 
-            this.examBT.Location = new System.Drawing.Point(35, 362);
-            this.examBT.Name = "examBT";
-            this.examBT.Size = new System.Drawing.Size(134, 47);
-            this.examBT.TabIndex = 4;
-            this.examBT.Text = "View Exams";
-            this.examBT.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -193,7 +183,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.examBT);
             this.Controls.Add(this.fileBT);
             this.Controls.Add(this.rmvStdBT);
             this.Controls.Add(this.reqBT);
@@ -209,7 +198,6 @@
         private System.Windows.Forms.Button reqBT;
         private System.Windows.Forms.Button rmvStdBT;
         private System.Windows.Forms.Button fileBT;
-        private System.Windows.Forms.Button examBT;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

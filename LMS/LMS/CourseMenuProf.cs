@@ -86,14 +86,21 @@ namespace LMS
 
         private void rmvStdBT_Click(object sender, EventArgs e)
         {
-            ListViewItem slcItem = stdLV.SelectedItems[0];
-            int sId = int.Parse(slcItem.SubItems[0].Text);
-            SqlParameter[] sqlParameters = {
+            if (stdLV.SelectedItems.Count > 0)
+            {
+                ListViewItem slcItem = stdLV.SelectedItems[0];
+                int sId = int.Parse(slcItem.SubItems[0].Text);
+                SqlParameter[] sqlParameters = {
                 new SqlParameter("@sId", SqlDbType.Int) {Value = sId},
-            };
-            string query = "DELETE FROM Registration WHERE sId = @sId";
-            DBHelper.ExecuteNonQuery(query, sqlParameters);
-            CourseMenuProf_Load(sender, e);
+                };
+                string query = "DELETE FROM Registration WHERE sId = @sId";
+                DBHelper.ExecuteNonQuery(query, sqlParameters);
+                CourseMenuProf_Load(sender, e);
+            }
+            else
+            {
+                MessageBox.Show("Please select a student!");
+            }
         }
 
         private void fileBT_Click(object sender, EventArgs e)
