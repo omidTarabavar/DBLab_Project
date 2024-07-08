@@ -42,7 +42,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.addCrsBT = new System.Windows.Forms.Button();
-            this.courseBox = new System.Windows.Forms.ListBox();
+            this.crsLVStd = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
             // saveBT
@@ -54,6 +54,7 @@
             this.saveBT.Text = "Save";
             this.saveBT.UseVisualStyleBackColor = true;
             this.saveBT.Visible = false;
+            this.saveBT.Click += new System.EventHandler(this.saveBT_Click_1);
             // 
             // chngProf
             // 
@@ -63,6 +64,7 @@
             this.chngProf.TabIndex = 25;
             this.chngProf.Text = "Change Profile";
             this.chngProf.UseVisualStyleBackColor = true;
+            this.chngProf.Click += new System.EventHandler(this.chngProf_Click_1);
             // 
             // pnTB
             // 
@@ -157,10 +159,11 @@
             this.button2.TabIndex = 29;
             this.button2.Text = "View Selected Course";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // addCrsBT
             // 
-            this.addCrsBT.Location = new System.Drawing.Point(387, 347);
+            this.addCrsBT.Location = new System.Drawing.Point(348, 347);
             this.addCrsBT.Name = "addCrsBT";
             this.addCrsBT.Size = new System.Drawing.Size(116, 38);
             this.addCrsBT.TabIndex = 28;
@@ -168,23 +171,23 @@
             this.addCrsBT.UseVisualStyleBackColor = true;
             this.addCrsBT.Click += new System.EventHandler(this.addCrsBT_Click);
             // 
-            // courseBox
+            // crsLVStd
             // 
-            this.courseBox.FormattingEnabled = true;
-            this.courseBox.ItemHeight = 20;
-            this.courseBox.Location = new System.Drawing.Point(387, 28);
-            this.courseBox.Name = "courseBox";
-            this.courseBox.Size = new System.Drawing.Size(384, 284);
-            this.courseBox.TabIndex = 27;
+            this.crsLVStd.HideSelection = false;
+            this.crsLVStd.Location = new System.Drawing.Point(348, 32);
+            this.crsLVStd.Name = "crsLVStd";
+            this.crsLVStd.Size = new System.Drawing.Size(422, 280);
+            this.crsLVStd.TabIndex = 30;
+            this.crsLVStd.UseCompatibleStateImageBehavior = false;
             // 
             // StudentMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.crsLVStd);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.addCrsBT);
-            this.Controls.Add(this.courseBox);
             this.Controls.Add(this.saveBT);
             this.Controls.Add(this.chngProf);
             this.Controls.Add(this.pnTB);
@@ -221,6 +224,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button addCrsBT;
-        private System.Windows.Forms.ListBox courseBox;
+        private System.Windows.Forms.ListView crsLVStd;
     }
 }

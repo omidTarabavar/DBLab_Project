@@ -19,7 +19,7 @@ namespace LMS
 
         public static DataTable getStudents(int cid)
         {
-            string query = "SELECT s.sId as sId, s.Name as Name, s.Family as Family FROM Registration as r JOIN Student as s ON r.sId = s.sId WHERE r.cId = @cId";
+            string query = "SELECT s.sId as sId, s.Name as Name, s.Family as Family, s.Email as Email FROM Registration as r JOIN Student as s ON r.sId = s.sId WHERE r.cId = @cId";
             SqlParameter[] sqlParameters = {
                 new SqlParameter("@cId", SqlDbType.Int) { Value = cid }
             };

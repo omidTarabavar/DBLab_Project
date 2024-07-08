@@ -57,6 +57,12 @@
     <Compile Include="AddCourseStd.Designer.cs">
       <DependentUpon>AddCourseStd.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddFileMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddFileMenu.Designer.cs">
+      <DependentUpon>AddFileMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="Course.cs" />
     <Compile Include="CourseMenuProf.cs">
       <SubType>Form</SubType>
@@ -64,7 +70,26 @@
     <Compile Include="CourseMenuProf.Designer.cs">
       <DependentUpon>CourseMenuProf.cs</DependentUpon>
     </Compile>
+    <Compile Include="CourseMenuStd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CourseMenuStd.Designer.cs">
+      <DependentUpon>CourseMenuStd.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBHelper.cs" />
+    <Compile Include="File.cs" />
+    <Compile Include="FileListMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileListMenu.Designer.cs">
+      <DependentUpon>FileListMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FileMenuStd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FileMenuStd.Designer.cs">
+      <DependentUpon>FileMenuStd.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +116,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="RequestMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RequestMenu.Designer.cs">
+      <DependentUpon>RequestMenu.cs</DependentUpon>
+    </Compile>
     <Compile Include="SignUp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -116,8 +147,20 @@
     <EmbeddedResource Include="AddCourseStd.resx">
       <DependentUpon>AddCourseStd.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddFileMenu.resx">
+      <DependentUpon>AddFileMenu.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CourseMenuProf.resx">
       <DependentUpon>CourseMenuProf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CourseMenuStd.resx">
+      <DependentUpon>CourseMenuStd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileListMenu.resx">
+      <DependentUpon>FileListMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FileMenuStd.resx">
+      <DependentUpon>FileMenuStd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -131,6 +174,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RequestMenu.resx">
+      <DependentUpon>RequestMenu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="SignUp.resx">
       <DependentUpon>SignUp.cs</DependentUpon>

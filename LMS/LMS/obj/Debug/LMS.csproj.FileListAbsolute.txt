@@ -13,3 +13,10 @@ F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.pdb
 F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.ProfessorMenu.resources
 F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.StudentMenu.resources
 F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.AddCourse.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.AddCourseStd.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.CourseMenuProf.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.RequestMenu.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.CourseMenuStd.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.FileListMenu.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.AddFileMenu.resources
+F:\Github\DBLab_Project\LMS\LMS\obj\Debug\LMS.FileMenuStd.resources

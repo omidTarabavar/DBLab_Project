@@ -59,7 +59,7 @@ namespace LMS
 
         public static DataTable getCoursesForStd(int sId)
         {
-            string query = "SELECT c.Title as Title, c.Semester as Semester, c.Department as Department, c.pId as pId FROM Course as c JOIN Registration as r ON c.cId = r.cId WHERE r.sId = @sId";
+            string query = "SELECT c.cId as cId, c.Title as Title, c.Semester as Semester, c.Department as Department, c.pId as pId FROM Course as c JOIN Registration as r ON c.cId = r.cId WHERE r.sId = @sId";
             SqlParameter[] sqlParameters = {
                 new SqlParameter("@sId", SqlDbType.Int) { Value = sId }
             };

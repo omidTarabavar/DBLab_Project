@@ -77,22 +77,7 @@ namespace LMS
             else return 1;
         }
 
-        public static int Upload_File(string title, string link, int cId)
-        {
-            string query;
-            SqlParameter[] sqlParameters;
-            query = "INSERT INTO Files (Title, Link, cId) VALUES (@Title, @Link, @cId);";
-            sqlParameters = new SqlParameter[] {
-                    new SqlParameter("@Title", SqlDbType.VarChar) {Value = title},
-                    new SqlParameter("@Link", SqlDbType.VarChar) {Value = link},
-                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId},
-            };
-            int res = DBHelper.ExecuteNonQuery(query, sqlParameters);
-            if (res == 0)
-                return -1;
-            else
-                return 1;
-        }
+
 
         public static int Create_Exam(string title, string due, string questions, string answers, int cId)
         {

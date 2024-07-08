@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.stdListBox = new System.Windows.Forms.ListBox();
             this.reqBT = new System.Windows.Forms.Button();
             this.rmvStdBT = new System.Windows.Forms.Button();
             this.fileBT = new System.Windows.Forms.Button();
@@ -43,16 +42,8 @@
             this.pidTB = new System.Windows.Forms.TextBox();
             this.chngDetBT = new System.Windows.Forms.Button();
             this.saveBT = new System.Windows.Forms.Button();
+            this.stdLV = new System.Windows.Forms.ListView();
             this.SuspendLayout();
-            // 
-            // stdListBox
-            // 
-            this.stdListBox.FormattingEnabled = true;
-            this.stdListBox.ItemHeight = 20;
-            this.stdListBox.Location = new System.Drawing.Point(421, 12);
-            this.stdListBox.Name = "stdListBox";
-            this.stdListBox.Size = new System.Drawing.Size(367, 324);
-            this.stdListBox.TabIndex = 0;
             // 
             // reqBT
             // 
@@ -62,15 +53,17 @@
             this.reqBT.TabIndex = 1;
             this.reqBT.Text = "View Requests";
             this.reqBT.UseVisualStyleBackColor = true;
+            this.reqBT.Click += new System.EventHandler(this.reqBT_Click);
             // 
             // rmvStdBT
             // 
-            this.rmvStdBT.Location = new System.Drawing.Point(421, 362);
+            this.rmvStdBT.Location = new System.Drawing.Point(369, 362);
             this.rmvStdBT.Name = "rmvStdBT";
             this.rmvStdBT.Size = new System.Drawing.Size(211, 47);
             this.rmvStdBT.TabIndex = 2;
             this.rmvStdBT.Text = "Remove Selected Student";
             this.rmvStdBT.UseVisualStyleBackColor = true;
+            this.rmvStdBT.Click += new System.EventHandler(this.rmvStdBT_Click);
             // 
             // fileBT
             // 
@@ -80,6 +73,7 @@
             this.fileBT.TabIndex = 3;
             this.fileBT.Text = "View Files";
             this.fileBT.UseVisualStyleBackColor = true;
+            this.fileBT.Click += new System.EventHandler(this.fileBT_Click);
             // 
             // examBT
             // 
@@ -174,11 +168,21 @@
             this.saveBT.UseVisualStyleBackColor = true;
             this.saveBT.Click += new System.EventHandler(this.saveBT_Click);
             // 
+            // stdLV
+            // 
+            this.stdLV.HideSelection = false;
+            this.stdLV.Location = new System.Drawing.Point(369, 13);
+            this.stdLV.Name = "stdLV";
+            this.stdLV.Size = new System.Drawing.Size(418, 308);
+            this.stdLV.TabIndex = 15;
+            this.stdLV.UseCompatibleStateImageBehavior = false;
+            // 
             // CourseMenuProf
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.stdLV);
             this.Controls.Add(this.saveBT);
             this.Controls.Add(this.chngDetBT);
             this.Controls.Add(this.pidTB);
@@ -193,7 +197,6 @@
             this.Controls.Add(this.fileBT);
             this.Controls.Add(this.rmvStdBT);
             this.Controls.Add(this.reqBT);
-            this.Controls.Add(this.stdListBox);
             this.Name = "CourseMenuProf";
             this.Text = "CourseMenuProf";
             this.Load += new System.EventHandler(this.CourseMenuProf_Load);
@@ -203,8 +206,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.ListBox stdListBox;
         private System.Windows.Forms.Button reqBT;
         private System.Windows.Forms.Button rmvStdBT;
         private System.Windows.Forms.Button fileBT;
@@ -219,5 +220,6 @@
         private System.Windows.Forms.TextBox pidTB;
         private System.Windows.Forms.Button chngDetBT;
         private System.Windows.Forms.Button saveBT;
+        private System.Windows.Forms.ListView stdLV;
     }
 }

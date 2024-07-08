@@ -28,14 +28,13 @@ CREATE TABLE Course (
 CREATE TABLE Registration(
 	sId INT NOT NULL,
 	cId INT NOT NULL,
-	Grade DECIMAL(5,2),
 	PRIMARY KEY (sId, cId),
 	FOREIGN KEY (sId) REFERENCES Student(sId),
 	FOREIGN KEY (cId) REFERENCES Course(cId)
 );
 
 CREATE TABLE Files(
-	fId INT,
+	fId INT IDENTITY(1,1),
 	Title VARCHAR(255) NOT NULL,
 	Link VARCHAR(255) NOT NULL,
 	cId INT,
@@ -43,16 +42,6 @@ CREATE TABLE Files(
 	FOREIGN KEY (cId) REFERENCES Course(cId)
 );
 
-CREATE TABLE Exams(
-	eId INT,
-	Title VARCHAR(255) NOT NULL,
-	Due datetime NOT NULL,
-	Questions VARCHAR(255) NOT NULL,
-	Answers VARCHAR(255) NOT NULL,
-	cId INT
-	PRIMARY KEY (eId, cId),
-	FOREIGN KEY (cId) REFERENCES Course(cId)
-);
 
 CREATE TABLE Registration_Request(
 	sId INT NOT NULL,
