@@ -30,7 +30,6 @@ namespace LMS
                     new SqlParameter("@Password", SqlDbType.VarChar) {Value = password},
                     new SqlParameter("@Phonenumber", SqlDbType.VarChar) {Value = phoneNumber}
                 };
-
             }
             else // type 1 = student
             {

@@ -46,17 +46,6 @@ namespace LMS
             return DBHelper.ExecuteQuery(query, sqlParameters);
         }
 
-        public static DataTable ViewExams(int cId)
-        {
-            string query;
-            SqlParameter[] sqlParameters;
-            query = "SELECT FROM Exams WHERE cId = @cId;";
-            sqlParameters = new SqlParameter[] {
-                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId},
-            };
-            return DBHelper.ExecuteQuery(query, sqlParameters);
-        }
-
         public static DataTable getCoursesForStd(int sId)
         {
             string query = "SELECT c.cId as cId, c.Title as Title, c.Semester as Semester, c.Department as Department, c.pId as pId FROM Course as c JOIN Registration as r ON c.cId = r.cId WHERE r.sId = @sId";

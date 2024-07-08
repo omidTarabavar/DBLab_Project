@@ -33,6 +33,7 @@ namespace LMS
                 }
                 catch (Exception ex)
                 {
+                    MessageBox.Show("Invalid Link!");
                 }
             }
         }

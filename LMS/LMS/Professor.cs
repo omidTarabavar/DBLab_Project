@@ -76,28 +76,5 @@ namespace LMS
             if (res == 0) return -1;
             else return 1;
         }
-
-
-
-        public static int Create_Exam(string title, string due, string questions, string answers, int cId)
-        {
-            string query;
-            SqlParameter[] sqlParameters;
-            query = "INSERT INTO Exams (Title, Due, Questions, Answers, cId) VALUES (@Title, @Due, @Questions, @Answers, @cId);";
-            sqlParameters = new SqlParameter[] {
-                    new SqlParameter("@Title", SqlDbType.VarChar) {Value = title},
-                    new SqlParameter("@Due", SqlDbType.DateTime) {Value = due},
-                    new SqlParameter("@Questions", SqlDbType.VarChar) {Value = questions},
-                    new SqlParameter("@Answers", SqlDbType.VarChar) {Value = answers},
-                    new SqlParameter("@cId", SqlDbType.Int) {Value = cId},
-            };
-            int res = DBHelper.ExecuteNonQuery(query, sqlParameters);
-            if (res == 0)
-                return -1;
-            else
-                return 1;
-        }
-
-
     }
 }
